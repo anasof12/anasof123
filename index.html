@@ -1,21 +1,116 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Personal Page</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colombian Webside</title>
     <style>
-      body { font-family: Arial; background-color: #f2f2f2; color: #333; padding: 20px; }
-      h1 { color: #0066cc; }
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and layout */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #FFD700 33%, #0033A0 33%, #0033A0 66%, #CE1126 66%);
+            color: #333;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #2a3d52;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        h1, h2 {
+            margin: 20px 0;
+        }
+
+        /* Section styles */
+        .about, .favorites, #contact {
+            margin: 20px 0;
+        }
+
+        .about img {
+            width: 100%;
+            max-width: 500px;
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2a3d52;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
     </style>
-  </head>
-  <body>
-    <h1>Hello, I'm [Your Name]!</h1>
-    <p>This is my first personal website using GitHub Pages.</p>
-    <img src="https://via.placeholder.com/150&quot; alt="Placeholder image">
-    <ul>
-      <li>I like music</li>
-      <li>I enjoy coding</li>
-      <li>I want to build more websites</li>
-    </ul>
-    <p><a href="https://editor.p5js.org">Check out p5.js</a></p>
-  </body>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Colombia!</h1>
+        <nav>
+            <ul>
+                <li><a href="landmarks.html">Landmarks of Colombia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about">
+        <h2>About Colombia</h2>
+        <img src="https://hotchkissrecord.org/wp-content/uploads/2024/04/Colombia-Article.jpg" alt="Colombia" class="photo">
+        <p>Colombia is a country in South America known for its rich culture, beautiful landscapes, and vibrant cities.</p>
+        <p><a href="landmarks.html">Explore famous landmarks of Colombia</a></p>
+    </section>
+
+    <section class="favorites">
+        <h2>My Top 5 Favorite Things about Colombia</h2>
+        <ul>
+            <li>Coffee</li>
+            <li>Cumbia and Vallenato music</li>
+            <li>The Amazon Rainforest</li>
+            <li>Cartagena's beautiful beaches</li>
+            <li>The Andes Mountains</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Colombian celebrities</h2>
+      <ul>
+        <li>Shakira</li>
+        <li>Maluma</li>
+        <li>James Rodriguez</li>
+        <li>Sofia Vergara</li>
+        
+        
+    </section>
+
+    
+
+</body>
 </html>
