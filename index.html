@@ -1,116 +1,131 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colombian Webside</title>
-    <style>
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+<style>
+    /* Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(to right, #4facfe, #00f2fe);
+        color: #fff;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Header Styling */
+    header {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        text-align: center;
+        border-bottom: 2px solid #fff;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        color: #FFD700;
+        text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1.2rem;
+        transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+        color: #FFD700;
+    }
+
+    /* Section Styling */
+    section {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    section p, section ul {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin: 20px 0;
+    }
+
+    .about img {
+        width: 80%;
+        max-width: 500px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    ul li {
+        margin: 10px 0;
+    }
+
+    /* Footer Styling */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        font-size: 0.9rem;
+        border-top: 2px solid #fff;
+    }
+
+    /* Button Styling */
+    button {
+        background: #FFD700;
+        color: #000;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: transform 0.2s, background 0.3s;
+    }
+
+    button:hover {
+        background: #ffcc00;
+        transform: scale(1.05);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        header h1 {
+            font-size: 2rem;
         }
 
-        /* Body and layout */
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #FFD700 33%, #0033A0 33%, #0033A0 66%, #CE1126 66%);
-            color: #333;
-            padding: 20px;
+        section h2 {
+            font-size: 2rem;
         }
 
-        header {
-            background-color: #2a3d52;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
+        section p, section ul {
+            font-size: 1rem;
         }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
-
-        h1, h2 {
-            margin: 20px 0;
-        }
-
-        /* Section styles */
-        .about, .favorites, #contact {
-            margin: 20px 0;
-        }
-
-        .about img {
-            width: 100%;
-            max-width: 500px;
-            margin: 10px 0;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #2a3d52;
-            color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <h1>Welcome to Colombia!</h1>
-        <nav>
-            <ul>
-                <li><a href="landmarks.html">Landmarks of Colombia</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="about">
-        <h2>About Colombia</h2>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf-wpsvGaVxwyRjkYEWF_lHXDYfdHp2F_IHQ&s" alt="Colombia" class="photo">
-        <p>Colombia is a country in South America known for its rich culture, beautiful landscapes, and vibrant cities.</p>
-       
-    </section>
-
-    <section class="favorites">
-        <h2>My Top 5 Favorite Things about Colombia</h2>
-        <ul>
-            <li>Coffee</li>
-            <li>Cumbia and Vallenato music</li>
-            <li>The Amazon Rainforest</li>
-            <li>Cartagena's beautiful beaches</li>
-            <li>The Andes Mountains</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Colombian celebrities</h2>
-      <ul>
-        <li>Shakira</li>
-        <li>Maluma</li>
-        <li>James Rodriguez</li>
-        <li>Sofia Vergara</li>
-        
-        
-    </section>
-
-    
-
-</body>
-</html>
+    }
+</style>
